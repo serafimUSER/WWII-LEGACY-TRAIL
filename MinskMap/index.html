@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="divide">
+        <div cgitlass="navigation">
+            <div class="nav_content">
+                <div class="item">
+                    <button id="ButtonActive1" onclick="ButtonActive(1)">
+                        <img src="./img/active/monuments.svg" id="Img1" class="icon" alt="">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="ButtonActive2" onclick="ButtonActive(2)">
+                        <img src="./img/active/musiem.svg" id="Img2" class="icon" alt="">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="ButtonActive3" onclick="ButtonActive(3)">
+                        <img src="./img/active/others.svg" id="Img3" class="icon" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header_logotype">
+                <h1><span style="color:rgb(179, 28, 28)">WWII</span> Legacy Trail</h1>
+            </div>
+            <div class="content_body">
+                <div class="cards_info">
+                    <div class="info__header">
+                        <h4>Помнікі</h4>
+                    </div>
+                    <div class="info__content" id="render">
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://planetabelarus.by/upload/resize_cache/iblock/75d/1330_887_18e21fe612b4afb807a26ecc22279a1d9/75d5c9317e92c2bd35f5157b822053fa.jpg'); background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Марат Казей</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://www.belarus.by/relimages/001574_392843.jpg');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Стела</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://avatars.mds.yandex.net/get-altay/2425845/2a0000017877bce52be748bc8c177c52cb14/XXL_height');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Дед талаш</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://planetabelarus.by/upload/resize_cache/iblock/899/1330_887_18e21fe612b4afb807a26ecc22279a1d9/899557526b10b5ed446e6f4b42300a74.jpg');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Беларсуь Партизанская</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%B7%D1%83%D0%B1%D1%80%D0%B5.JPG/1200px-%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0_%D0%BD%D0%B0_%D0%B7%D1%83%D0%B1%D1%80%D0%B5.JPG');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Матерь Беларусь на зубре</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://img-fotki.yandex.ru/get/6111/285075196.2d/0_efa16_9ae3d843_orig.jpg');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Танк-монумент у Острошицкого Городка</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                        <div class="crad__info">
+                            <div class="image" style="background: url('https://photo.foto-planeta.com/view/6/8/5/6/minsk-685647.jpg');background-size: cover;">
+                            </div>
+                            <div class="descript">
+                                <h3>Танк-памятник у Дома офицеров</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deleniti eveniet qui possimus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/map.js"></script>
+    <script src="./js/nav.js"></script>
+    <script>
+        ButtonActive(1)
+    </script>
+</body>
+</html>
